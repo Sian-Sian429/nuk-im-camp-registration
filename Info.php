@@ -1,5 +1,5 @@
 <?php
-    // 1. 安全接收變數 (同步更新欄位)
+    // 1. 安全接收變數
     $uName = htmlspecialchars($_POST["uName"] ?? '', ENT_QUOTES, 'UTF-8');
     $uId = htmlspecialchars($_POST["uId"] ?? '', ENT_QUOTES, 'UTF-8');
     $uGender = htmlspecialchars($_POST["uGender"] ?? '未提供', ENT_QUOTES, 'UTF-8');
@@ -7,7 +7,7 @@
     $uMail = htmlspecialchars($_POST["uMail"] ?? '', ENT_QUOTES, 'UTF-8');
     $uDomain = htmlspecialchars($_POST["uDomain"] ?? '', ENT_QUOTES, 'UTF-8');
     $uEatingHabits = htmlspecialchars($_POST["uEatingHabits"] ?? '一般(葷食)', ENT_QUOTES, 'UTF-8');
-    $uLine = htmlspecialchars($_POST["uLine"] ?? '', ENT_QUOTES, 'UTF-8'); // 改為接收 LINE ID
+    $uLine = htmlspecialchars($_POST["uLine"] ?? '', ENT_QUOTES, 'UTF-8');
     $uExpect = htmlspecialchars($_POST["uExpect"] ?? '80', ENT_QUOTES, 'UTF-8');
     $uQuestion = htmlspecialchars($_POST["uQuestion"] ?? '無', ENT_QUOTES, 'UTF-8');
 
