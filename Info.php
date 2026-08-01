@@ -34,7 +34,7 @@
         $pdo = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // 準備 SQL 寫入語法 (移除 age, birth, color, url，並加入 uLine)
+        // 準備 SQL 寫入語法
         $sql = "INSERT INTO students (uName, uId, uGender, uPhone, uMail, uDomain, uEatingHabits, uLine, uActivity, uExpect, uQuestion) 
                 VALUES (:uName, :uId, :uGender, :uPhone, :uMail, :uDomain, :uEatingHabits, :uLine, :uActivity, :uExpect, :uQuestion)";
         
