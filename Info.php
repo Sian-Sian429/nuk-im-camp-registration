@@ -20,10 +20,10 @@
     // ========================================================
     // 2. 資料庫連線與寫入
     // ========================================================
-    $servername = "sql213.infinityfree.com";
-    $username = "if0_42538646";
-    $password = "LLzyMwKpp0YvtUP"; 
-    $dbname = "if0_42538646_nukim_camp";
+    $servername = "資料庫伺服器";
+    $username = "資料庫帳號";
+    $password = "資料庫密碼"; 
+    $dbname = "資料庫名稱";
 
     // 預設一個變數來判斷是否寫入成功
     $isSaved = false;
